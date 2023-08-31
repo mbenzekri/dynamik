@@ -1,0 +1,21 @@
+<html>
+<body>
+    <label >dummy</label> <input type="text" /><br>
+    <label for="name">An input</label><input id= "aninput" name="name" type="text" /><br>
+    <label >dummy</label> <input type="text" /><br>
+    <script>
+        document.getElementById("aninput").addEventListener("focus",
+            (event) =>  console.log(`focus trigerred`)
+        )
+        document.getElementById("aninput").addEventListener("blur",
+            (event) =>  console.log(`blur trigerred`)
+        )
+        document.getElementById("aninput").addEventListener("input",
+            (event) =>  console.log(`input trigerred`)
+        )
+        document.getElementById("aninput").addEventListener("change",
+            (event) =>  console.log(`change trigerred`)
+        )
+    </script>
+</body>
+</html>
